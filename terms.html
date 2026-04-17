@@ -25,14 +25,14 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 64px;
-      height: 64px;
-      background: rgba(255,255,255,0.15);
-      border-radius: 18px;
+      width: 80px;
+      height: 80px;
+      background: transparent;
       margin-bottom: 16px;
+      filter: drop-shadow(0 0 18px rgba(99,102,241,0.85));
     }
 
-    header .logo svg { width: 36px; height: 36px; fill: #fff; }
+    header .logo svg { width: 80px; height: 80px; }
 
     header h1 {
       font-size: 28px;
@@ -145,8 +145,28 @@
 
 <header>
   <div class="logo">
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 2L4 5v5c0 5.25 3.4 10.15 8 11.35C16.6 20.15 20 15.25 20 10V5l-8-3z"/>
+    <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Shield with rounded top corners and curved bottom -->
+      <path d="M100 8
+               C100 8, 24 32, 24 32
+               C18 34, 16 40, 16 48
+               L16 104
+               C16 154, 52 192, 100 208
+               C148 192, 184 154, 184 104
+               L184 48
+               C184 40, 182 34, 176 32
+               C176 32, 100 8, 100 8 Z"
+            fill="#6366f1"/>
+      <!-- Key ring head (hollow) -->
+      <circle cx="74" cy="162" r="18" fill="none" stroke="#14b8a6" stroke-width="8"/>
+      <!-- Filled center hole -->
+      <circle cx="74" cy="162" r="7" fill="#6366f1"/>
+      <!-- Key shaft -->
+      <line x1="92" y1="162" x2="148" y2="162" stroke="#14b8a6" stroke-width="8" stroke-linecap="round"/>
+      <!-- Tooth 1 (taller, closer to end) -->
+      <line x1="132" y1="162" x2="132" y2="178" stroke="#14b8a6" stroke-width="7" stroke-linecap="round"/>
+      <!-- Tooth 2 (shorter, at end) -->
+      <line x1="148" y1="162" x2="148" y2="174" stroke="#14b8a6" stroke-width="7" stroke-linecap="round"/>
     </svg>
   </div>
   <h1>VaultKey</h1>
